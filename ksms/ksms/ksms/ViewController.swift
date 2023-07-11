@@ -24,7 +24,7 @@ class ViewController: UIViewController, WKScriptMessageHandler {
         super.viewDidLoad()
         view.addSubview(webView)
         
-        guard let url = URL(string: "https://kayashipyard.com/pn/") else {
+        guard let url = URL(string: "https://kayashipyard.com/pnl/") else {
             return
         }
         webView.configuration.userContentController.add(self, name: "scriptHandler")
